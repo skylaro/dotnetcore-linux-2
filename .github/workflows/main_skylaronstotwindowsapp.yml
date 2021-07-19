@@ -48,6 +48,11 @@ jobs:
       url: ${{ steps.deploy-to-webapp.outputs.webapp-url }}
 
     steps:
+    - name: Set timezone
+      uses: szenius/set-timezone@v1.0
+      with:
+        timezoneLinux: "America/Los_Angeles"
+        timezoneWindows: "Pacific Standard Time"
     - name: Download artifact from build job
       uses: actions/download-artifact@v2
       with:
