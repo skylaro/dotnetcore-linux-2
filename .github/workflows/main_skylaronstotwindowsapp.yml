@@ -17,6 +17,7 @@ jobs:
     - name: Set timezone
       uses: szenius/set-timezone@v1.0
       with:
+        timezoneLinux: "America/Los_Angeles"
         timezoneWindows: "Pacific Standard Time"
     - name: checkout
       uses: actions/checkout@v2
