@@ -1,1 +1,1 @@
-# dotnetcore-linu
+# dotnetcore-linuxu
