@@ -14,9 +14,11 @@ jobs:
     runs-on: windows-latest
 
     steps:
-    - uses: szenius/set-timezone@v1.0
+    - name: Set timezone
+      uses: szenius/set-timezone@v1.0
       with:
         timezoneWindows: "Pacific Standard Time"
+    - name: checkout
       uses: actions/checkout@v2
 
     - name: Set up .NET Core
